@@ -1,0 +1,253 @@
+add_namespace = scripted_peace
+country_event = {
+	id = scripted_peace.1
+	title = Scripted_peace.1.t
+	desc = scripted_peace.d
+	picture = GFX_report_event_african_soldiers
+	
+	is_triggered_only = yes
+	
+	
+	hidden = yes
+	
+	option = {
+		name = Scripted_peace.a
+		FIN = {
+			white_peace = {
+				tag = SOV
+				message = FINBEATSSOV
+			}	
+			transfer_state = 216
+			transfer_state = 215
+			transfer_state = 213
+		}
+		ai_chance = {
+			base = 5
+		}
+	}
+}
+country_event = {
+	id = scripted_peace.2
+	title = Scripted_peace.2.t
+	desc = scripted_peace.d
+	picture = GFX_report_event_african_soldiers
+	
+	is_triggered_only = yes
+	
+	
+	hidden = yes
+	
+	option = {
+		name = Scripted_peace.a
+		SLO = {
+			add_state_core = 665
+			add_state_core = 664
+			add_state_core = 71
+			add_state_core = 70
+		}
+		GER = {
+			white_peace = {
+				tag = CZE
+				message = GERBEATSCZE
+			}	
+			annex_country = {
+				target = CZE
+				transfer_troops = no
+			}
+			release_puppet = SLO	
+		}
+		HUN = {
+		transfer_state = 73
+		}
+	}
+}
+
+country_event = {
+	id = scripted_peace.3
+	title = Scripted_peace.3.t
+	desc = scripted_peace.d
+	picture = GFX_report_event_african_soldiers
+	
+	
+	is_triggered_only = yes
+	
+	hidden = yes
+	
+	option = {
+		name = Scripted_peace.a
+		
+		GER = {
+			white_peace = {
+				tag = POL
+				message = GERBEATSPOL
+			}	
+			annex_country = {
+				target = POL
+				transfer_troops = no
+			}
+			puppet = POL
+		}
+		POL = {
+			transfer_state = 10
+			transfer_state = 90
+			transfer_state = 92
+			transfer_state = 88
+			set_cosmetic_tag = GGN
+		}
+	}
+}
+
+country_event = {
+	id = scripted_peace.4
+	title = Scripted_peace.4.t
+	desc = scripted_peace.d
+	picture = GFX_report_event_african_soldiers
+	
+	is_triggered_only = yes
+	
+	hidden = yes
+	
+	option = {
+		name = Scripted_peace.a
+		
+		SPR = {
+			white_peace = {
+				tag = POR
+				message = SPRBEATSPOR
+			}	
+			annex_country = {
+				target = POR
+				transfer_troops = no
+			}
+			set_cosmetic_tag = IBR
+		}
+	}
+}
+
+
+country_event = {
+	id = scripted_peace.6
+	title = Scripted_peace.6.t
+	desc = scripted_peace.d
+	picture = GFX_report_event_african_soldiers
+	
+	is_triggered_only = yes
+	
+	hidden = yes
+	
+	option = {
+		name = Scripted_peace.a
+		
+		FRA = {
+			white_peace = {
+				tag = BEL
+				message = BELPARTITION
+			}
+			annex_country = {
+				target = BEL
+				transfer_troops = no
+			}
+		}
+		HOL = {
+			transfer_state = 6
+		}
+	}
+}
+
+country_event = {
+	id = scripted_peace.8
+	title = Scripted_peace.8.t
+	desc = scripted_peace.d
+	picture = GFX_report_event_african_soldiers
+	
+	is_triggered_only = yes
+	
+	hidden = yes
+	
+	option = {
+		name = Scripted_peace.a
+			GER = {
+			white_peace = {
+				tag = YUG
+				message = YUGDISSOLVED
+			}
+			annex_country = {
+				target = YUG
+				transfer_troops = no
+			}
+			release_puppet = CRO
+			release_puppet = BOS
+			release_puppet = SER
+			}
+			CRO = {
+				annex_country = {
+					target = BOS
+					transfer_troops = no
+				}
+			}
+			ITA = {
+				transfer_state = 105
+				transfer_state = 802
+			}
+			BUL = {
+				transfer_state = 803
+				transfer_state = 106
+			}
+			HUN = {
+			transfer_state = 45
+		}
+	}
+}
+country_event = {
+	id = scripted_peace.100
+	title = Scripted_peace.100.t
+	desc = scripted_peace.d
+	picture = GFX_report_event_african_soldiers
+	
+	is_triggered_only = yes
+		
+	hidden = yes
+	
+	option = {
+		name = Scripted_peace.a
+		
+		GER = {
+			white_peace = {
+				tag = ENG
+				message = ALLIESSURRENDER
+			}
+			transfer_state = 28
+			transfer_state = 8 
+			transfer_state = 546
+			transfer_state = 769
+			transfer_state = 768
+			transfer_state = 548
+			transfer_state = 547
+			transfer_state = 773
+			transfer_state = 777
+			transfer_state = 541
+		}
+		ITA = {
+		transfer_state = 735
+		transfer_state = 105
+		transfer_state = 802
+		transfer_state = 552
+		transfer_state = 452
+		transfer_state = 447
+		transfer_state = 446
+		transfer_state = 457
+		transfer_state = 456
+		transfer_state = 551
+		transfer_state = 767
+		transfer_state = 549
+		transfer_state = 269
+		transfer_state = 268
+		}
+		VIC = {
+		annex_country = {
+			target = FRA
+			transfer_troops = yes
+			}
+		}
+	}	 
+}

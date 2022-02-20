@@ -1,0 +1,20 @@
+GGN = {
+ color = rgb { 110 110 110 }
+ color_ui = rgb { 110 110 110 }
+}
+LIV_LIT = {
+ color = rgb { 52 145 45 }
+ color_ui = rgb { 110 110 110 }
+}
+EST_LIT = {
+ color = rgb { 52 145 45 }
+ color_ui = rgb { 110 110 110 }
+}
+PRS_LIT = {
+ color = rgb { 52 145 45 }
+ color_ui = rgb { 110 110 110 }
+}
+RKSAF = {
+ color = rgb { 110 110 110 }
+ color_ui = rgb { 110 110 110 }
+}
