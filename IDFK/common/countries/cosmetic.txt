@@ -18,3 +18,15 @@ RKSAF = {
  color = rgb { 110 110 110 }
  color_ui = rgb { 110 110 110 }
 }
+ENGMVW = {
+ color = rgb { 110 110 110 }
+ color_ui = rgb { 110 110 110 }
+}
+RKMCW = {
+ color = rgb { 110 110 110 }
+ color_ui = rgb { 110 110 110 }
+}
+CSAF = {
+ color = rgb { 30 112 58 }
+ color_ui = rgb { 30 112 58}
+}

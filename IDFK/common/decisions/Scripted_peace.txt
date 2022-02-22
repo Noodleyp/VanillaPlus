@@ -20,7 +20,7 @@ Scripted_peace = {
 	}
 	SPRPORPEACE = {
 		ai_will_do = {
-			factor = 1
+			factor = 4
 		}
 		visible = {
 			original_tag = SPR
@@ -56,31 +56,10 @@ Scripted_peace = {
 			}
 		}
 	}
-	GERCZEPEACE = {
-		ai_will_do = {
-			factor = 1
-		}
-
-		visible = {
-			original_tag = GER
-			has_war_with = CZE
-		}
-		available = {
-			CZE = {
-				surrender_progress > 0.5
-			}
-		}
-		complete_effect = {
-			country_event = {
-				id = scripted_peace.2
-			}
-		}
-	}
 	POLTWOSIDES = {
 		ai_will_do = {
-			factor = 1
+			factor = 5
 		}
-
 		visible = {
 			original_tag = POL
 			
@@ -97,6 +76,7 @@ Scripted_peace = {
 				has_war_with = SOV
 				has_global_flag = sov_yes_pact
 			}
+		}
 		complete_effect = {
 			white_peace = {
 				tag = GER
@@ -129,7 +109,7 @@ Scripted_peace = {
 			}
 		}
 	}
-}	
+	
 	SPLITYUG = {
 		ai_will_do = {
 			factor = 1
@@ -156,12 +136,13 @@ Scripted_peace = {
 		}
 
 		visible = {
+			NOT = {
+				has_global_flag = AXIS_WIN_WWII
+			}
 			original_tag = GER	
 			has_war_with = ENG
 		}
 		available = {
-			NOT = {
-				has_global_flag = AXIS_WIN_WWII
 			ENG = {
 				surrender_progress > 0.75
 			}
@@ -200,6 +181,8 @@ Scripted_peace = {
 				release = BAH
 				release = BAS
 				release = BLZ
+				set_cosmetic_tag = ENGLAND
+				
 			}
 			IRE = {
 				annex_country = {
@@ -220,6 +203,14 @@ Scripted_peace = {
 				transfer_state = 660
 				transfer_state = 772
 				transfer_state = 539
+				transfer_state = 769
+				transfer_state = 768
+				transfer_state = 718
+				transfer_state = 295
+				transfer_state = 538
+				transfer_state = 558
+				transfer_state = 776
+				transfer_state = 777
 				annex_country = {
 					target = TZN
 				}
@@ -235,6 +226,11 @@ Scripted_peace = {
 				release_puppet = SAF
 				transfer_state = 541
 				set_global_flag = AXIS_WIN_WWII
+				puppet = BEL
+				puppet = HOL
+				BEL = {
+					transfer_state = 29
+				}
 			}
 			VIC = {
 				annex_country = {
@@ -253,6 +249,177 @@ Scripted_peace = {
 				}
 				transfer_state = 269
 				transfer_state = 268
+			}
+			ENG = {
+				dismantle_faction = yes
+				set_politics = {
+					ruling_party = neutrality
+					elections_allowed = no
+					last_election = "1936.1.1"
+					election_frequency = 48
+					}
+			}
+			ZIM = {
+				country_event = {
+					id = Post_War_Axis.1
+					days = 54
+				}
+			}
+		}
+	}
+	KILLENGAGAIN = {
+		ai_will_do = {
+			factor = 1
+		}
+
+		visible = {
+			original_tag = GER	
+			has_war_with = ENG
+			has_global_flag = AXIS_WIN_WWII
+		}
+		available = {
+			ENG = {
+				surrender_progress > 0.75
+			}
+		}
+		complete_effect = {
+			GER = {
+				white_peace = {
+					tag = ENG
+					message = ENGDEAD
+				}
+				puppet = ENG
+				transfer_state = 123
+			}
+			ENG = {
+				set_cosmetic_tag = ENGMVW
+				dismantle_faction = yes
+				load_focus_tree = ENG_MVW
+			}
+		}
+	}
+	SPLITBEL = {
+		ai_will_do = {
+			factor = 1
+		}
+
+		visible = {
+			original_tag = FRA
+			has_war_with = BEL
+			is_in_faction_with = HOL
+		}
+		available = {
+			BEL = {
+				surrender_progress > 0.6
+			}
+		}
+		complete_effect = {
+			FRA = {
+				white_peace = {
+					tag = BEL
+					message = BELPARTITION
+				}
+				annex_country = {
+					target = BEL
+				}
+				release = COG
+				release = RWA
+				release = BRD
+			}
+			HOL = {
+				transfer_state = 6
+			}
+		}
+	}
+	DESTROYSOV = {
+		ai_will_do = {
+			factor = 1
+		}
+
+		visible = {
+			original_tag = GER
+			has_war_with = SOV
+		}
+		available = {
+			SOV = {
+				surrender_progress > 0.6
+			}
+		}
+		complete_effect = {
+			GER = {
+				white_peace = {
+					tag = SOV
+					message = SOVFUCKED
+				}
+				annex_country = {
+					target = BEL
+				}
+				transfer_state = 97
+			}
+			SOV = {
+				release = GEO
+				release = UKR
+				release = BLR
+				release = AZR
+				release = ARM
+				release = UZB
+				release = TMS
+				release = TAJ
+				release = KAZ
+				release = KYR
+				release = LIT
+				release = EST
+				release = LAT
+			}
+			GER = {
+				puppet = UKR
+				puppet = BLR
+				puppet = GEO
+				puppet = MCW
+			}
+			MCW = {
+				transfer_state = 219
+				transfer_state = 205
+				transfer_state = 242
+				transfer_state = 246
+				transfer_state = 247
+				set_cosmetic_tag = RKMCW
+			}
+			GEO = {
+				annex_country = {
+					target = AZR
+				}
+				annex_country = {
+					target = ARM
+				}
+				transfer_state = 233
+				transfer_state = 827
+				transfer_state = 828
+				transfer_state = 821
+				transfer_state = 232
+				transfer_state = 235
+				transfer_state = 234
+			}
+			UKR = {
+				transfer_state = 93
+				transfer_state = 194
+				transfer_state = 94
+				transfer_state = 218
+			}
+			POL = {
+				transfer_state = 91
+				transfer_state = 89
+			}
+			BLR = {
+				annex_country = {
+					target = LIT
+				}
+				annex_country = {
+					target = LAT
+				}
+				annex_country = {
+					target = EST
+				}
 		}
 	}
 }

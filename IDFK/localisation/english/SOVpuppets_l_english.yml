@@ -7,6 +7,8 @@ BELPARTITION:0 "§Y Belgium§! has fallen to the \n combined forces of §3 Franc
 ALLIESSURRENDER:0 "§R The Allies §! have surrendered and admitted defeat \n in the §R Second World War §! \n to the §g Axis§!"
 YUGDISSOLVED:0 "No one expected Yugoslavia to live long,\n but few thought it would end like this, at the hands of \n §gGermany§! and §R The Axis§!"
 POLPARTITION:0 "March March, Dabrowski, from §GItaly§!\n to §R Poland§!"    
+ENGDEAD:0 "§R England§! fucking died lol"
+SOVFUCKED:0 "The Mighty §RSoviet Union§! has fallen to §gGermany§! and the Wehrmacht"
 SOV_puppet.1.t:0 "Occupation of Silesia and Pomerania"
 SOV_puppet.1.a:0 "To Poland!"
 SOV_puppet.1.b:0 "To the GDR!"
