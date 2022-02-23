@@ -1,0 +1,30 @@
+﻿l_english:
+FINBEATSSOV:0 "§g Finland§! has beaten the \n§R Soviet Union§!\n in the Winter War"
+GERBEATSCZE:0 "§g Germany§! has beaten \n§5Czechoslovakia§!\n and split it up"
+GERBEATSPOL:0 "§g Germany§! has defeated §RPoland§! \n Though the men and women of the Polish homeland \n fought with everything they had, Poland is lost. \n §R Perhaps this time forever.§!"
+SPRBEATSPOR:0 "§Y Spain§! has defeated \n§G Portugal §!\n and united the §8Iberian Peninsula§!"
+BELPARTITION:0 "§Y Belgium§! has fallen to the \n combined forces of §3 France §! and §O The Netherlands§!"
+ALLIESSURRENDER:0 "§R The Allies §! have surrendered and admitted defeat \n in the §R Second World War §! \n to the §g Axis§!"
+YUGDISSOLVED:0 "No one expected Yugoslavia to live long,\n but few thought it would end like this, at the hands of \n §gGermany§! and §R The Axis§!"
+POLPARTITION:0 "March March, Dabrowski, from §GItaly§!\n to §R Poland§!"    
+ENGDEAD:0 "§R England§! fucking died lol"
+SOVFUCKED:0 "The Mighty §RSoviet Union§! has fallen to §gGermany§! and the Wehrmacht"
+FALLHOL:0 "The §RNetherlands§! have fallen to the §gKaiser's§! forces"
+SOV_puppet.1.t:0 "Occupation of Silesia and Pomerania"
+SOV_puppet.1.a:0 "To Poland!"
+SOV_puppet.1.b:0 "To the GDR!"
+SOV_puppet.1.c:0 "Split it!"
+SOV_puppet.d:0 "We have occupied some lands and must decide the fate of them"
+
+SOV_puppet.2.t:0 "Occupation of Dobrudja"
+SOV_puppet.2.a:0 "To Romania!"
+SOV_puppet.2.b:0 "To Bulgaria!"
+
+SOV_puppet.3.t:0 "Occupation of Czechoslovakia"
+SOV_puppet.3.a:0 "Split it"
+SOV_puppet.3.b:0 "Keep it together"
+
+Scripted_peace.2.t "Czechoslovakia submits unconditional surrender"
+Scripted_peace.1.t:0 "Soviets Withdraw from Murmansk and East Karelia"
+
+
