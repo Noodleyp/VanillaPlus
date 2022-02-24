@@ -1,0 +1,14 @@
+state={
+	id=846
+	name="STATE_846"
+	provinces={
+		3612 6666 6683 9622 11590 13124 
+	}
+	manpower=50000
+	history = {
+		owner = SWI
+		add_core_of = SWI
+	}
+	buildings_max_level_factor=1.000
+	local_supplies=0.000
+}

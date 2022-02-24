@@ -1,0 +1,118 @@
+add_namespace = special_handling
+
+	country_event = {
+	id = special_handling.1
+	title = wtt_germany.14.t
+	desc = wtt_germany.14.d
+	picture = GFX_report_event_generic_sign_treaty3
+
+	is_triggered_only = yes
+
+	# Accept
+	option = {
+		name = wtt_germany.14.a
+		ai_chance = {
+			factor = 50
+		}
+		effect_tooltip = {
+			GER = { transfer_state = 85 }
+			GER = { transfer_state = 807 }
+			GER = { transfer_state = 86 }
+			GER = { transfer_state = 762 }
+			GER = { transfer_state = 842 }
+			GER = { transfer_state = 844 }
+			GER = { add_ideas = anti_soviet_pact }
+			add_ideas = anti_soviet_pact
+			add_opinion_modifier = { target = GER modifier = danzig_for_guarantees }
+		}
+		GER = {
+			country_event = { id = special_handling.2 days = 1 }
+		}
+	}
+
+	# Decline
+	option = {
+		name = wtt_germany.14.b
+		ai_chance = {
+			#factor = 50
+			modifier = {
+				factor = 0.5
+				strength_ratio = { tag = GER ratio < 1 }
+			}
+			modifier = {
+				factor = 0.2
+				strength_ratio = { tag = GER ratio < 0.5 }
+			}
+			modifier = {
+				factor = 0.5
+				GER = { strength_ratio = { tag = SOV ratio > 0.8 } }
+			}
+			modifier = {
+				factor = 0
+				GER = { strength_ratio = { tag = SOV ratio > 0.8 } }
+				strength_ratio = { tag = GER ratio < 0.5 }
+			}
+		}
+		GER = {
+			country_event = { id = wtt_germany.16 days = 1 }
+		}
+	}
+}
+country_event = {
+	id = special_handling.2
+	title = wtt_germany.15.t
+	desc = wtt_germany.15.d
+	picture = GFX_report_event_generic_sign_treaty3
+
+	is_triggered_only = yes
+
+	# Great
+	option = {
+		name = wtt_germany.15.a
+		transfer_state = 85
+		transfer_state = 807
+		transfer_state = 86
+		transfer_state = 762
+		transfer_state = 842
+		transfer_state = 844
+		add_state_core = 85
+		add_state_core = 86
+		add_state_core = 762
+		add_state_core = 842
+		add_state_core = 844
+		86 = { set_state_name = "Posen" }
+		set_province_name = { id = 6558 name = "Posen" }
+		762 = { set_state_name = "Kattowitz" }
+		add_ideas = anti_soviet_pact
+		POL = { 
+			add_ideas = anti_soviet_pact
+			add_opinion_modifier = { target = GER modifier = danzig_for_guarantees }
+		}
+		hidden_effect = {
+			news_event = { id = wtt_news.7 hours = 6 }
+			set_country_flag = poland_traded_danzig
+			POL = {
+				add_ai_strategy = {
+					type = befriend
+					id = ROOT
+					value = 200
+				}
+				add_ai_strategy = {
+					type = alliance
+					id = ROOT
+					value = 200
+				}
+				add_ai_strategy = {
+					type = befriend
+					id = ENG
+					value = -200
+				}
+				add_ai_strategy = {
+					type = alliance
+					id = ENG
+					value = -200
+				}
+			}
+		}
+	}
+}

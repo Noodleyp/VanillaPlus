@@ -48,3 +48,11 @@ KRNID = {
  color = rgb { 125 125 125 }
  color_ui = rgb { 125 125 125 }
 }
+KRBEL = {
+ color = rgb { 125 125 125 }
+ color_ui = rgb { 125 125 125 }
+}
+KRFRA = {
+ color = rgb { 125 125 125 }
+ color_ui = rgb { 125 125 125 }
+}
