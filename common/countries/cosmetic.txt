@@ -31,6 +31,14 @@ RKMCW = {
  color = rgb { 110 110 110 }
  color_ui = rgb { 110 110 110 }
 }
+RKFRA = {
+ color = rgb { 110 110 110 }
+ color_ui = rgb { 110 110 110 }
+}
+RKNIE = {
+ color = rgb { 110 110 110 }
+ color_ui = rgb { 110 110 110 }
+}
 RKUKR = {
  color = rgb { 110 110 110 }
  color_ui = rgb { 110 110 110 }

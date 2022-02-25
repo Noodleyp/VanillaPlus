@@ -23,6 +23,9 @@ reorganize_europe = {
 			transfer_state = 96
 			transfer_state = 784
 			set_country_flag = POL_LIBERATED
+			POL = {
+				drop_cosmetic_tag = yes
+			}
 		}
 	}
 	
@@ -114,6 +117,7 @@ reorganize_europe = {
 		}
 		complete_effect = {
 			release_puppet = BUL
+			transfer_state = 854
 		}
 	}
 	FATEOFCZECHOSLOVAKIA = {

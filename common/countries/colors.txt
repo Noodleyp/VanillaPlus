@@ -1,7 +1,7 @@
 CHI = {
  color = rgb { 31 68 128 }
  color_ui = rgb { 110 110 110 }
-}
+} 
 PRC = {
  color = rgb { 133 23 26 }
  color_ui = rgb { 110 110 110 }
@@ -98,7 +98,7 @@ TUR = {
 	color_ui = rgb { 133 24 20 }
 }
 GRE = {
-	color = rgb { 93 181 227 }
+	color = rgb { 42 92 133 }
 	color_ui = rgb { 121 235 255 }
 }
 ALB = {
@@ -114,7 +114,7 @@ DEN = {
 	color_ui = rgb { 199 151 121 }
 }
 BUL = {
-	color = rgb { 51 155 0 }
+	color = rgb { 63 133 42 }
 	color_ui = rgb { 210 147 217 }
 }
 POR = {
@@ -262,7 +262,7 @@ VEN = {
 	color_ui = rgb { 222 247 198 }
 }
 YUN = {
-	color = rgb { 114 148 80 }
+	color = rgb { 68 99 194 }
 	color_ui = rgb { 222 247 198 }
 }
 USA = {
@@ -270,8 +270,7 @@ USA = {
 	color_ui = rgb { 87 160 255 }
 }
 MON = {
-	#color = HSV { 0.1 0.15 0.4 }
-	color = rgb { 108 140 42 }
+	color = rgb { 63 95 181 }
 	color_ui = rgb { 209 247 133 }
 }
 MEN = {
@@ -279,7 +278,7 @@ MEN = {
 	color_ui = rgb { 165  230  132 }
 }
 TAN = {
-	color = rgb { 152 130 191 }
+	color = rgb { 148 74 74 }
 	color_ui = rgb { 198 169 248 }
 }
 PAR = {
@@ -316,12 +315,12 @@ RAJ = {
 }
 
 CRO = {
-	color = rgb { 230  70  180 }
+	color = rgb { 48 140 176 }
 	color_ui = rgb { 230 255 122 }
 }
 
 GXC = {
-	color = rgb { 71 113 97 }
+	color = rgb { 72 80 181 }
 	color_ui = rgb { 71 113 97 }
 }
 
@@ -361,12 +360,12 @@ JOR = {
 }
 
 SYR = {
-	color = rgb { 100  100  150 }
+	color = rgb { 63 49 89 }
 	color_ui = rgb { 100  100  150 }
 }
 
 SER = {
-	color = rgb { 160 110 110 }
+	color = rgb { 13 52 130 }
 	color_ui = rgb { 160 110 110 }
 }
 
@@ -675,7 +674,7 @@ D50 = {
 	color_ui = rgb { 255 138 61 }
 }
 BAY = {
-	color = rgb { 233  231  246 }
+	color = rgb { 34 36 138 }
 	color_ui = rgb { 233  231  246 }
 }
 MEK = {
@@ -820,5 +819,26 @@ SCO = {
 }
 WLS = {
 	color = rgb { 24 125 46 }
+	color_ui { 24 125 46 }
+}
+BOS = {
+	color = rgb { 48 99 176 }
+	color_ui { 24 125 46 }
+}
+
+MAC = {
+	color = rgb { 115 71 18 }
+	color_ui { 24 125 46 }
+}
+SLV = {
+	color = rgb { 34 74 135 }
+	color_ui { 24 125 46 }
+}
+CAR = {
+	color = rgb { 153 161 48 }
+	color_ui { 24 125 46 }
+}
+CMR = {
+	color = rgb { 61 74 148 }
 	color_ui { 24 125 46 }
 }

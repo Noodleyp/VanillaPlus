@@ -188,6 +188,8 @@ country_event = {
 			ITA = {
 				transfer_state = 105
 				transfer_state = 802
+				transfer_state = 852
+				transfer_state = 851
 			}
 			BUL = {
 				transfer_state = 803
