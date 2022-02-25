@@ -1,0 +1,43 @@
+state={
+	id=853
+	name="STATE_853"
+
+	history={
+		owner = ENG
+		victory_points = {
+			11374 5
+		}
+		buildings = {
+			infrastructure = 5
+			arms_factory = 3
+			industrial_complex = 3
+			dockyard = 1
+			anti_air_building = 5
+			radar_station = 1
+			air_base = 10
+			11374 = {
+				naval_base = 5
+
+			}
+
+		}
+		add_core_of = ENG
+		1939.1.1 = {
+			buildings = {
+				arms_factory = 4
+				industrial_complex = 4
+
+			}
+
+		}
+
+	}
+
+	provinces={
+		11374  
+	}
+	manpower=824296
+	buildings_max_level_factor=1.000
+	state_category=city
+	local_supplies=0.000
+}
